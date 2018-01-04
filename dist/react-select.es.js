@@ -1031,14 +1031,12 @@ var Select$1 = function (_React$Component) {
 					return;
 				case 13:
 					// enter
-					event.preventDefault();
 					event.stopPropagation();
 					if (this.state.isOpen) {
 						this.selectFocusedOption();
 					} else {
-						this.focusNextOption();
+						return;
 					}
-					return;
 					break;
 				case 27:
 					// escape
